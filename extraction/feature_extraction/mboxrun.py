@@ -188,7 +188,7 @@ def processFile(filepath, phishy=True, limit=500):
     finders = [HTMLFormFinder(), AttachmentFinder(), FlashFinder(),
                IFrameFinder(), HTMLContentFinder(), URLsFinder(),
                ExternalResourcesFinder(), JavascriptFinder(),
-               CssFinder(), IPsInURLs(), AtInURLs(),BanWords()]
+               CssFinder(), IPsInURLs(), AtInURLs(),BanWords(),EncodingFinder()]
     for message in mbox:
         dict = {}
 
